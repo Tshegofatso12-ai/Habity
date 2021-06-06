@@ -4,6 +4,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import WelcomeScreen from "../../Authentication/Welcome";
 import Register from "../../Authentication/Register";
 import Login from "../../Authentication/Login";
+import Dashboard from "../../Screens/Dashboard";
 
 navigationOptions = ({ navigation }) => ({
   header: null,
@@ -22,6 +23,12 @@ const AppNavigator = createStackNavigator(
         },
         Register: {
           screen: Register,
+          navigationOptions: {
+            header: null,
+          },
+        },
+        Dashboard: {
+          screen: Dashboard,
           navigationOptions: {
             header: null,
           },

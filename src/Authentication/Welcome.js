@@ -46,10 +46,10 @@ export default function Welcome({ navigation })
         />
         <Title style={{fontSize: 14,color: "black"}}>Keep Your Life On Track With Habitly</Title>
         <Text style={{margin:30,color:"#000",opacity:0.8,textAlign:"center",alignSelf:"center",alignContent:"center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci magna elit congue elit, consequat luctus semper arcu vitae. Aliquet odio maecenas nunc et rhoncus. Id eget ornare malesuada neque vel at libero. Sit sit aliquam commodo sed sodales quam quis.</Text>
-        <TouchableOpacity style={{width:"80%",height:60,backgroundColor:"#04DF00",opacity:0.4,borderRadius:20,alignItems: "center",justifyContent:"center",}} 
+        <TouchableOpacity style={{width:"80%",height:60,backgroundColor:"rgba(4,223,0,0.5)",borderRadius:20,alignItems: "center",justifyContent:"center",}} 
         onPress={()=>navigation.navigate('Login')}
         >
-          <Text style={{ textAlign: "center",color: "#fff", alignSelf:"center",fontSize:18, fontWeight:"bold"}}>Get Started</Text>
+          <Text style={{textAlign: "center",color: "#fff", alignSelf:"center",fontSize:18, fontWeight:"bold"}}>Get Started</Text>
         </TouchableOpacity>
     </View>
   );

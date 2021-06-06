@@ -57,9 +57,11 @@ export default function Welcome({ navigation })
             keyboardType="name-phone-pad"
             onChangeText={(username) => console.log(username.replace(/\s/g, ""))}
         />
-        <TouchableOpacity style={{margin:20,width:"80%",height:60,backgroundColor:"#04DF00",opacity:0.4,borderRadius:20,alignItems: "center",justifyContent:"center",}} 
+        <TouchableOpacity 
+        onPress={()=>navigation.navigate("Dashboard")}
+        style={{margin:20,width:"80%",height:60,backgroundColor:"rgba(4,223,0,0.5)",borderRadius:20,alignItems: "center",justifyContent:"center",}} 
         >
-          <Text style={{ textAlign: "center",color: "#fff", alignSelf:"center",fontSize:18, fontWeight:"bold"}}>Get Started</Text>
+          <Text style={{ textAlign: "center",color: "#fff", alignSelf:"center",fontSize:18, fontWeight:"bold"}}>Sign In</Text>
         </TouchableOpacity>
         <TouchableOpacity  onPress={()=>navigation.navigate('Register')}>
         <Text style={{marginBottom:20,color:"#000",opacity:0.8,textAlign:"center",alignSelf:"center",alignContent:"center"}}>Don't have an account? <Text style={{color:"#04DF00"}}>Sign Up</Text></Text>
